@@ -54,7 +54,7 @@ img {
 	overflow: hidden;
 }
 .inner {
-  max-width: 1080px;
+  max-width: 108rem;
   margin-inline: auto;
   padding-inline: 10rem;
 }
@@ -87,4 +87,21 @@ img {
   font-size: 1.4rem;
   line-height: calc(14 / 14);
   padding-block: 1.8rem;
+}
+
+/* fv */
+.fv {
+  position: relative;
+  height: 50rem;
+}
+.fv__img img {
+  aspect-ratio: 1080 / 500;
+  object-fit: cover;
+}
+.fv__contents {
+  width: 49.2rem;
+  height: 21rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 15.2rem;
 }
