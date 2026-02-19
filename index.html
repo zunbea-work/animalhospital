@@ -40,11 +40,13 @@
         <div class="inner">
           <div class="header__logo">
             <a href="#">
-              <img src="./img/ashiato_01.jpg" alt="滑石きたむら動物病院">
+              <div class="icon">
+                <img src="./img/ashiato_01.jpg" alt="滑石きたむら動物病院">
+              </div>
               <h1 class="header__logo-title">滑石きたむら動物病院</h1>
             </a>
           </div>
-          <nav class="header__nav">
+          <nav class="header__nav pc">
             <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a href="#greeting">ご挨拶</a>
@@ -75,13 +77,26 @@
         <!-- fv -->
         <div class="fv">
           <div class="fv__img">
-            <img src="./img/fv_pc.jpg" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/fv_pc.jpg">
+              <img src="./img/fv_sp.jpg" alt="滑石きたむら動物病院は大切な家族のホームドクターです">
+            </picture>
           </div>
           <div class="fv__contents">
-            <p class="fv__text">滑石きたむら動物病院は</p>
-            <h2 class="fv__title">大切な家族の<br>ホームドクターです</h2>
+            <div class="fv__contents-textarea">
+              <p class="fv__text">滑石きたむら動物病院は</p>
+              <h2 class="fv__title">
+                <span class="fv__title-main">大切な家族の</span>
+                <span class="fv__title-sub">ホームドクターです</span>
+              </h2>
+            </div>
           </div>
         </div>
+
+        <!-- ご挨拶 -->
+        <section id="greeting" class="greeting">
+          <div class="greeting__catch"></div>
+        </section>
       </main>
 
       <!-- footer -->
