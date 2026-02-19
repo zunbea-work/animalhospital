@@ -140,3 +140,53 @@ img {
     margin-top: 0.7rem;
   }
 }
+
+/* ご挨拶 */
+.greeting {
+  text-align: center;
+  position: relative;
+  padding: 6rem;
+  max-width: 108rem;
+  margin-inline: auto;
+
+  @media (max-width: 767px) {
+    padding: 4.9rem 2rem 3.9rem;
+  }
+}
+.greeting__catch h2 {
+  font-size: 3rem;
+  line-height: calc(50 / 30);
+  color: var(--font-bg);
+
+  @media (max-width: 767px) {
+    font-size: 2.5rem;
+    line-height: calc(35 / 25);
+  }
+}
+.greeting__text {
+  font-size: 1.8rem;
+  line-height: calc(33 / 18);
+  font-weight: 500;
+  margin-top: 1.5rem;
+
+  @media (max-width: 767px) {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    margin-top: 1.7rem;
+  }
+}
+.greeting__image {
+  width: 8.4rem;
+  height: 7.7rem;
+  position: absolute;
+  right: 7.7rem;
+  bottom: 3.3rem;
+
+  @media (max-width: 767px) {
+    width: 6.8rem;
+    height: 6.2rem;
+    right: 3rem;
+    bottom: 4.6rem;
+  }
+}
