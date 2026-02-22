@@ -74,7 +74,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6.3rem;
+  padding-top: 6.4rem;
+
+  @media (max-width: 767px) {
+    padding-top: 5.1rem;
+  }
 }
 .catch h2 {
   font-size: 2.5rem;
@@ -155,7 +159,7 @@ img {
   }
 }
 
-/* ご挨拶 */
+/* ご挨拶 greeting */
 .greeting {
   text-align: center;
   position: relative;
@@ -205,14 +209,15 @@ img {
   }
 }
 
-/* 強み */
+/* 強み about */
 .about__contents {
-  padding-block: 4.8rem;
+  padding-block: 4.8rem 6.8rem;
   display: flex;
   flex-direction: column;
   row-gap: 5rem;
 
   @media (max-width: 767px) {
+    padding-block: 4.2rem 3.5rem;
     row-gap: 4.2rem;
   }
 }
@@ -222,6 +227,12 @@ img {
 
   @media (max-width: 767px) {
     width: 100%;
+  }
+}
+.about__contents-image img {
+  @media (max-width: 767px) {
+    aspect-ratio: 335 / 200;
+    object-fit: cover;
   }
 }
 .img-right {
@@ -281,6 +292,7 @@ img {
   @media (max-width: 767px) {
     font-size: 1.6rem;
     line-height: calc(30 / 16);
+    padding-top: 0.8rem;
   }
 }
 .about-sp {
