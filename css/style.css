@@ -74,11 +74,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 6.4rem;
-
-  @media (max-width: 767px) {
-    padding-top: 5.1rem;
-  }
 }
 .catch h2 {
   font-size: 2.5rem;
@@ -210,14 +205,21 @@ img {
 }
 
 /* 強み about */
+.about {
+  padding-block: 6.4rem 6.8rem;
+
+  @media (max-width: 767px) {
+    padding-block: 5.1rem 3.5rem;
+  }
+}
 .about__contents {
-  padding-block: 4.8rem 6.8rem;
+  padding-top: 4.8rem;
   display: flex;
   flex-direction: column;
   row-gap: 5rem;
 
   @media (max-width: 767px) {
-    padding-block: 4.2rem 3.5rem;
+    padding-top: 4.2rem;
     row-gap: 4.2rem;
   }
 }
@@ -298,5 +300,57 @@ img {
 .about-sp {
   @media (min-width: 400px) {
     display: none;
+  }
+}
+
+/* サービス service */
+.service {
+  padding-block: 6.3rem 5.9rem;
+
+  @media (max-width: 767px) {
+    padding-block: 4.5rem 3.9rem;
+  }
+}
+.service__contents {
+  padding-top: 4.8rem;
+  display: flex;
+  column-gap: 5rem;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    padding-top: 4.4rem;
+    flex-direction: column;
+    row-gap: 3.9rem;
+  }
+}
+.service__contents-image img {
+  aspect-ratio: 260 / 200;
+  object-fit: cover;
+
+  @media (max-width: 767px) {
+    aspect-ratio: 335 / 200;
+  }
+}
+.service__contents-textarea h3 {
+  text-align: center;
+  padding-top: 1.9rem;
+  font-size: 2rem;
+  line-height: calc(25 / 20);
+
+  @media (max-width: 767px) {
+    padding-top: 3rem;
+    line-height: calc(30 / 20);
+  }
+}
+.service__contents-textarea p {
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+  padding-top: 0.8rem;
+  font-weight: 500;
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    padding-top: 0.7rem;
   }
 }
