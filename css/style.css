@@ -517,3 +517,113 @@ img {
     line-height: calc(30 / 16);
   }
 }
+
+/* お問い合わせ */
+.contact {
+  padding-block: 6.2rem 8rem;
+
+  @media (max-width: 767px) {
+    padding-block: 4.3rem 5rem;
+  }
+}
+.contact__text {
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 1.7rem;
+  line-height: calc(30 / 17);
+  font-weight: 500;
+
+  @media (max-width: 767px) {
+    padding-top: 4.3rem;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+  }
+}
+.form {
+  padding-top: 3.9rem;
+
+  @media (max-width: 767px) {
+    padding-top: 3.4rem;
+  }
+}
+.form__name,
+.form__mail,
+.form__message {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.form__mail {
+  padding-top: 3rem;
+
+  @media (max-width: 767px) {
+    padding-top: 1.7rem;
+  }
+}
+.form__message {
+  padding-top: 3rem;
+
+  @media (max-width: 767px) {
+    padding-top: 1.7rem;
+  }
+}
+label {
+  display: block;
+  font-size: 2rem;
+  line-height: calc(33 / 20);
+  width: 16.9rem;
+
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+    line-height: calc(33 / 18);
+    padding-bottom: 0.2rem;
+  }
+}
+input {
+  max-width: 71.1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #FFF;
+
+  @media (max-width: 767px) {
+    height: 5rem;
+  }
+}
+textarea {
+  max-width: 71.1rem;
+  width: 100%;
+  height: 30rem;
+  background-color: #fff;
+}
+.form__button {
+  text-align: center;
+  margin-inline: auto;
+  display: block;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.form__button button {
+  font-size: 2.5rem;
+  line-height: calc(33 / 25);
+  border: solid 1px var(--font-bg);
+  background-color: var(--font-bg);
+  width: 20rem;
+  padding-block: 0.7rem 0.8rem;
+  color: #FFF;
+  border-radius: 1rem;
+  transition: all 0.4s;
+
+  @media (max-width: 767px) {
+    font-size: 2rem;
+    line-height: calc(26 / 20);
+    width: 100%;
+    padding-block: 0.6rem 0.7rem;
+  }
+}
+.form__button button:hover {
+  background-color: #FFF;
+  color: var(--font-bg);
+}
