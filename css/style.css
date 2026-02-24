@@ -66,7 +66,7 @@ img {
 .icon {
   width: 2.5rem;
   height: 2.5rem;
-  margin-right: 0.9rem;
+  display: block;
 }
 .bg-color {
   background-color: rgb(13, 150, 160, 0.1);
@@ -79,7 +79,6 @@ img {
 .catch h2 {
   font-size: 2.5rem;
   line-height: calc(36 / 25);
-  padding-inline: 2rem;
 }
 
 /* header */
@@ -91,7 +90,10 @@ img {
 .header__logo a {
   display: flex;
   align-items: center;
-  padding-block: 0.9rem;
+  padding-block: 0.8rem 0.9rem;
+}
+.header__logo .icon {
+  margin-right: 0.95rem;
 }
 .header a {
   transition: opacity 0.4s;
@@ -134,18 +136,20 @@ img {
 }
 .fv__text {
   font-size: 2.5rem;
-  line-height: calc(25 / 25);
+  line-height: calc(36 / 25);
 
   @media (max-width: 767px) {
     font-size: 2rem;
     line-height: calc(29 / 20);
   }
 }
-.fv__title span {
+.fv__title {
   font-size: calc(40 / 1080 * 100vw);
   line-height: calc(60 / 40);
-  margin-top: 0.8rem;
+  padding-top: 0.8rem;
   color: var(--font-bg);
+}
+.fv__title span {
   display: block;
 
   @media (max-width: 767px) {
@@ -213,6 +217,9 @@ img {
     padding-block: 5.1rem 3.5rem;
   }
 }
+.about h2 {
+  padding-inline: 2rem;
+}
 .about__contents {
   padding-top: 4.8rem;
   display: flex;
@@ -263,7 +270,7 @@ img {
   }
 }
 .img-left .about__contents-text {
-  padding-left: 4.5rem;
+  padding-left: 4.7rem;
 
   @media (max-width: 767px) {
     padding-left: 0;
@@ -311,6 +318,9 @@ img {
   @media (max-width: 767px) {
     padding-block: 4.5rem 3.9rem;
   }
+}
+.service h2 {
+  padding-inline: 1.6rem;
 }
 .service__contents {
   padding-top: 4.8rem;
@@ -364,6 +374,9 @@ img {
     padding-block: 4.3rem 4.9rem;
   }
 }
+.news h2 {
+  padding-inline: 2rem;
+}
 .news__contents {
   padding-top: 4.6rem;
 }
@@ -389,7 +402,7 @@ img {
 .news__contents-item time {
   font-size:  1.7rem;
   line-height: calc(25 / 17);
-  width: 12rem;
+  padding-right: 2.5rem;
 }
 .news__contents-item h3 {
   font-size: 2rem;
