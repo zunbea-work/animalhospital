@@ -82,6 +82,12 @@ img {
 }
 
 /* header */
+.header h1 {
+  @media (max-width: 767px) {
+    font-size: 2rem;
+    line-height: calc(33 / 20);
+  }
+}
 .header .inner {
   display: flex;
   justify-content: space-between;
@@ -148,15 +154,14 @@ img {
   line-height: calc(60 / 40);
   padding-top: 0.8rem;
   color: var(--font-bg);
-}
-.fv__title span {
-  display: block;
 
   @media (max-width: 767px) {
     font-size: 3rem;
     line-height: calc(40 / 30);
-    margin-top: 0.7rem;
   }
+}
+.fv__title span {
+  display: block;
 }
 
 /* ご挨拶 greeting */
@@ -402,13 +407,14 @@ img {
 .news__contents-item time {
   font-size:  1.7rem;
   line-height: calc(25 / 17);
-  padding-right: 2.5rem;
+  margin-right: 2.5rem;
 }
 .news__contents-item h3 {
   font-size: 2rem;
   line-height: calc(25 / 20);
   color: var(--font-bg);
-  width: 20rem;
+  width: 16rem;
+  margin-right: 4.9rem;
 
   @media (max-width: 767px) {
     padding-top: 0.2rem;
@@ -434,15 +440,20 @@ img {
     padding-block: 4.3rem 5rem;
   }
 }
+.access h2 {
+  padding-inline: 2rem;
+}
 .access__contents {
   display: flex;
-  justify-content: space-between;
-  column-gap: 4.6rem;
+  justify-content: center;
   padding-top: 4.6rem;
 
   @media (max-width: 767px) {
     flex-direction: column;
   }
+}
+.access__contents-map {
+  margin-right: 4.6rem;
 }
 .access__contents-map iframe {
   display: block;
@@ -454,6 +465,9 @@ img {
   @media (max-width: 767px) {
     height: 22.2rem;
   }
+}
+.access-textarea {
+  flex: 1;
 }
 .access-textarea__title h3 {
   font-size: 2.2rem;
@@ -496,6 +510,7 @@ img {
 
   @media (max-width: 767px) {
     padding-top: 0.6rem;
+    padding-left: 0.2rem;
   }
 }
 .access-textarea__mail p {
@@ -514,9 +529,11 @@ img {
   border-bottom: solid 1px var(--border-color);
   padding-block: 1.4rem 1.3rem;
   margin-top: 2.7rem;
+  padding-left: 0.4rem;
 
   @media (max-width: 767px) {
     padding-block: 1.1rem;
+    padding-left: 0;
     margin-top: 1.7rem;
   }
 }
@@ -538,6 +555,9 @@ img {
   @media (max-width: 767px) {
     padding-block: 4.3rem 5rem;
   }
+}
+.contact h2 {
+  padding-inline: 2rem;
 }
 .contact__text {
   text-align: center;
@@ -588,6 +608,7 @@ label {
   font-size: 2rem;
   line-height: calc(33 / 20);
   width: 16.9rem;
+  padding-top: 0.7rem;
 
   @media (max-width: 767px) {
     font-size: 1.8rem;
@@ -655,7 +676,7 @@ textarea {
 .footer__contents {
   display: flex;
   justify-content: center;
-  column-gap: 1.7rem;
+  column-gap: 1.4rem;
 
   @media (max-width: 964px) {
     flex-direction: column;
@@ -663,7 +684,7 @@ textarea {
 }
 .footer__contents-list {
   display: flex;
-  column-gap: 1.7rem;
+  column-gap: 1.4rem;
   justify-content: center;
 }
 .footer__contents-link {
