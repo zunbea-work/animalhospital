@@ -58,7 +58,6 @@ img {
 .inner {
   max-width: 88rem;
   margin-inline: auto;
-  /* padding-inline: 3rem; */
 
   @media (max-width: 767px) {
     padding-inline: 2rem;
