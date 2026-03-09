@@ -50,7 +50,7 @@ img {
   height: auto;
   display: block;
 }
-#container {
+.container {
 	width: 100%;
 	overflow: hidden;
 }
@@ -589,6 +589,7 @@ img {
 
 .access-textarea__mail p {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: calc(27 / 18);
   padding-top: 0.8rem;
 }
