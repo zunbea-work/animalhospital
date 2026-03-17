@@ -731,13 +731,13 @@ a:hover {
   background-color: var(--color-main);
   padding: 6.6rem 3rem 7rem 3rem;
 }
-.footer__inner {
-  margin-inline: auto;
-}
 @media (max-width: 767px) {
-  .footer__inner {
+  .footer {
     padding: 4.5rem 2rem 5rem;
   }
+}
+.footer__inner {
+  margin-inline: auto;
 }
 @media (max-width: 964px) {
   .footer__contents {
