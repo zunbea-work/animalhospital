@@ -233,7 +233,6 @@ a:hover {
 }
 .greeting__text span {
   display: inline-block;
-  text-align: left;
 }
 .greeting__image {
   width: 8.4rem;
@@ -493,9 +492,12 @@ a:hover {
   }
 }
 .access__contents-map-iframe {
-  max-width: 44rem;
-  width: 100%;
-  display: block;
+  aspect-ratio: 440 / 300;
+}
+@media (max-width: 767px) {
+  .access__contents-map-iframe {
+    aspect-ratio: 335 / 222;
+  }
 }
 .access__contents-map-iframe iframe {
   border: 0;
