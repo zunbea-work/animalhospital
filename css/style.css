@@ -546,16 +546,12 @@ address {
   }
 }
 .access-textarea__address span,
-.access-textarea__mail span,
-.access-textarea__tel span {
+.access-textarea__mail span {
   display: inline-block;
 }
 .access-textarea__tel p {
   display: flex;
   align-items: center;
-}
-.access-textarea__tel span {
-  vertical-align: middle;
 }
 .access-textarea__tel {
   margin-top: 1.4rem;
@@ -568,11 +564,14 @@ address {
 .access-textarea__tel .phone {
   font-size: 1.8rem;
   line-height: calc(27 / 18);
+  position: relative;
+  bottom: -0.2rem;
 }
 @media (max-width: 767px) {
   .access-textarea__tel .phone {
     font-size: 1.6rem;
     line-height: calc(27 / 16);
+    bottom: -0.3rem;
   }
 }
 .access-textarea__tel .number {
