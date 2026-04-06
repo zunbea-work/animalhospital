@@ -198,7 +198,7 @@ a:hover {
 @media (max-width: 767px) {
   .fv__contents-span {
     padding-top: 0.7rem;
-    font-size: 3rem;
+    font-size: calc(30 / 375 * 100vw);
     line-height: calc(40/ 30);
     font-weight: bold;
   }
