@@ -186,7 +186,7 @@ a {
 @media (max-width: 767px) {
   .fv__contents-title {
     font-size: calc(20 / 375 * 100vw);
-    line-height: calc(20 / 20);
+    line-height: calc(29 / 20);
     font-weight: bold;
   }
 }
