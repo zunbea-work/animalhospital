@@ -59,14 +59,16 @@ iframe {
 a {
   transition: opacity 0.4s;
 }
-a:hover {
-  opacity: 0.7;
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    opacity: 0.7;
+  }
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   a:hover {
     opacity: 1;
   }
-}
+} */
 .main {
   margin-top: 5rem;
 }
@@ -153,11 +155,11 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: calc(152 / 1080 * 100vw);
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .fv__contents {
-    display: flex;
     align-items: flex-end;
   }
 }
@@ -184,7 +186,7 @@ a:hover {
 @media (max-width: 767px) {
   .fv__contents-title {
     font-size: calc(20 / 375 * 100vw);
-    line-height: calc(36.2 / 20);
+    line-height: calc(20 / 20);
     font-weight: bold;
   }
 }
@@ -449,9 +451,14 @@ a:hover {
     padding: 2.7rem 1rem 2.8rem;
   }
 }
-.news__contents-item a:hover {
-  cursor: pointer;
+@media (hover: hover) and (pointer: fine) {
+  .news__contents-item a:hover {
+    cursor: pointer;
+  }
 }
+/* .news__contents-item a:hover {
+  cursor: pointer;
+} */
 .news__contents-item time {
   font-size:  1.7rem;
   line-height: calc(25 / 17);
@@ -721,6 +728,24 @@ address {
   display: block;
 }
 .form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 20rem;
+  height: 5rem;
+  background-color: var(--font-bg);
+  margin: 5rem auto 0;
+  border: 0.1rem solid var(--font-bg);
+  color: #FFF;
+  border-radius: 1rem;
+  transition: background-color 0.4s, color 0.4s;
+}
+.form__submit {
+  font-size: 2.5rem;
+  line-height: calc(33 / 25);
+}
+/* .form__button {
   margin-top: 5rem;
   display: flex;
   justify-content: center;
@@ -749,12 +774,13 @@ address {
     font-size: 2rem;
     line-height: calc(26 / 20);
   }
+} */
+@media (hover: hover) and (pointer: fine) {
+  .form__button:hover {
+    background-color: #FFF;
+    color: var(--font-bg);
+  }
 }
-.form__submit:hover {
-  background-color: #FFF;
-  color: var(--font-bg);
-}
-
 /* footer */
 .footer {
   background-color: var(--color-main);
