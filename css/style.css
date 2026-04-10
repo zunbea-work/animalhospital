@@ -166,7 +166,7 @@ a {
   height: calc(210 / 1080 * 100vw);
   background: rgba(255, 255, 255, 0.7);
   padding-left: calc(99 / 1080 * 100vw);
-  padding-top: 1.8rem;
+  padding-top: 2.3rem;
   position: absolute;
   bottom: 13.8rem;
 }
@@ -175,12 +175,13 @@ a {
     width: calc(311 / 375 * 100vw);
     height: calc((148 / 375 * 100vw));
     padding-left: calc(20 / 375 * 100vw);
+    padding-top: 1.8rem;
     bottom: 0;
   }
 }
 .fv__contents-title {
   font-size: calc(25 / 1080 * 100vw);
-  line-height: calc(36.2 / 25);
+  line-height: calc(36 / 25);
   font-weight: bold;
   display: block;
 }
