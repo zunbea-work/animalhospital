@@ -169,7 +169,7 @@ a {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 13.8rem;
+  bottom: calc(138 / 1080 * 100vw);
 }
 @media (max-width: 767px) {
   .fv__contents-textarea {
