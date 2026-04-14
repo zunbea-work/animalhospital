@@ -193,7 +193,7 @@ a {
 }
 .fv__contents-span {
   display: block;
-  margin-top: 0.8rem;
+  margin-top: calc(8 / 1080 * 100vw);
   font-size: calc(40 / 1080 * 100vw);
   line-height: calc(60 / 40);
   color: var(--font-bg);
@@ -201,7 +201,7 @@ a {
 }
 @media (max-width: 767px) {
   .fv__contents-span {
-    margin-top: 0.7rem;
+    margin-top: calc(7 / 375 * 100vw);
     font-size: calc(30 / 375 * 100vw);
     line-height: calc(40/ 30);
   }
